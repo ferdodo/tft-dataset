@@ -1,0 +1,25 @@
+{
+	"name": "tft-dataset",
+	"version": "0.1.0",
+	"description": "Basic informations on current tft set.",
+	"main": "dist/index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ferdodo/tft-dataset"
+	},
+	"keywords": [
+		"tft"
+	],
+	"author": "Thomas Riffard",
+	"license": "MIT",
+	"scripts": {
+		"build": "tsc && vitest run && stryker run && dprint check"
+	},
+	"devDependencies": {
+		"@stryker-mutator/core": "^8.2.6",
+		"@stryker-mutator/vitest-runner": "^8.2.6",
+		"dprint": "^0.45.0",
+		"typescript": "^5.4.3",
+		"vitest": "^1.4.0"
+	}
+}
