@@ -52,7 +52,7 @@ export const synergies: Synergy[] = [
 			2: SynergyLevel.Bronze,
 			3: SynergyLevel.Silver,
 			4: SynergyLevel.Silver,
-			5: SynergyLevel.Gold,
+			5: SynergyLevel.Silver,
 			6: SynergyLevel.Gold,
 			7: SynergyLevel.Diamond
 		}
@@ -142,8 +142,8 @@ export const synergies: Synergy[] = [
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			8: SynergyLevel.Diamond
+			6: SynergyLevel.Silver,
+			8: SynergyLevel.Gold
 		}
 	},
 	{

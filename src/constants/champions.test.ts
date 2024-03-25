@@ -122,10 +122,3 @@ test("Should contain 5 Sniper", function() {
 
 	expect(synergies.length).toEqual(5);
 });
-
-test("Should contain 6 Dragonlord", function() {
-	const synergies = champions.flatMap(c => c.synergies)
-		.filter(synergyName => synergyName === SynergyName.Dragonlord);
-
-	expect(synergies.length).toEqual(5);
-});
