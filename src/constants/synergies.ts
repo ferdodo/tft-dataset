@@ -16,8 +16,8 @@ export const synergies: Synergy[] = [
 		name: SynergyName.Dryad,
 		levels: {
 			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
+			4: SynergyLevel.Gold,
+			6: SynergyLevel.Diamond
 		}
 	},
 	{
@@ -33,8 +33,8 @@ export const synergies: Synergy[] = [
 		name: SynergyName.Fortune,
 		levels: {
 			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold
+			5: SynergyLevel.Gold,
+			7: SynergyLevel.Diamond
 		}
 	},
 	{
@@ -84,8 +84,8 @@ export const synergies: Synergy[] = [
 		name: SynergyName.Porcelain,
 		levels: {
 			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
+			4: SynergyLevel.Gold,
+			6: SynergyLevel.Diamond
 		}
 	},
 	{
@@ -202,7 +202,7 @@ export const synergies: Synergy[] = [
 	{
 		name: SynergyName.Trickshot,
 		levels: {
-			2: SynergyLevel.Silver,
+			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Gold
 		}
 	},
