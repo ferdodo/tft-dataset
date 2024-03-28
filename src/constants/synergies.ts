@@ -172,7 +172,7 @@ export const synergies: Synergy[] = [
 	{
 		name: SynergyName.Reaper,
 		levels: {
-			2: SynergyLevel.Silver,
+			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Gold
 		}
 	},
