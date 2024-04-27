@@ -377,7 +377,7 @@ export const champions: Champion[] = [
 	{
 		name: ChampionName.Yorick,
 		synergies: [Umbral, Behemoth],
-		cost: 3,
+		cost: 2,
 		range: 1
 	},
 	{
