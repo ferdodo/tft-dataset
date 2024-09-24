@@ -75,9 +75,9 @@ export const synergies: Synergy[] = [
 	{
 		name: Faerie,
 		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
+			3: SynergyLevel.Bronze,
+			5: SynergyLevel.Silver,
+			7: SynergyLevel.Gold,
 			9: SynergyLevel.Diamond
 		}
 	},
