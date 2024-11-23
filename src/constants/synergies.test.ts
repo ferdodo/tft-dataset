@@ -7,7 +7,7 @@ test("Should contain all synergies", () => {
 
 test("All synergies should contain levels", () => {
 	const synergiesWithLevels = synergies.filter(
-		(s) => Object.keys(s.levels).length
+		(s) => Object.keys(s.levels).length,
 	);
 	expect(synergies.length).toEqual(synergiesWithLevels.length);
 });

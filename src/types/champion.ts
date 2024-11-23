@@ -1,5 +1,5 @@
-import { ChampionName } from "../constants/champion-name";
-import { SynergyName } from "../constants/synergy-name";
+import type { ChampionName } from "../constants/champion-name";
+import type { SynergyName } from "../constants/synergy-name";
 
 export interface Champion {
 	name: ChampionName;

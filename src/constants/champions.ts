@@ -3,394 +3,393 @@ import { ChampionName } from "./champion-name";
 import { SynergyName } from "./synergy-name";
 
 const {
-	Arcana,
-	Chrono,
-	Dragon,
-	Druid,
-	Eldritch,
-	Faerie,
-	Frost,
-	Honeymancy,
-	Portal,
-	Pyro,
-	Ravenous,
-	Sugarcraft,
-	Witchcraft,
-	Ascendant,
-	Bastion,
-	BatQueen,
-	BestFriends,
-	Blaster,
-	Hunter,
-	Incantor,
-	Mage,
-	Multistriker,
-	Preserver,
-	Scholar,
-	Shapeshifter,
-	Vanguard,
-	Warrior
+	Academy,
+	Automata,
+	BlackRose,
+	ChemBaron,
+	Conqueror,
+	Emissary,
+	Enforcer,
+	Experiment,
+	Family,
+	Firelight,
+	HighRoller,
+	JunkerKing,
+	Rebel,
+	Scrap,
+	Ambusher,
+	Artillerist,
+	Bruiser,
+	Dominator,
+	FormSwapper,
+	PitFighter,
+	Quickstriker,
+	Sentinel,
+	Sniper,
+	Sorcerer,
+	Visionary,
+	Watcher,
 } = SynergyName;
 
 export const champions: Champion[] = [
 	{
-		name: ChampionName.Ashe,
-		synergies: [Eldritch, Multistriker],
-		cost: 1,
-		range: 4
-	},
-	{
-		name: ChampionName.Blitzcrank,
-		synergies: [Honeymancy, Vanguard],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Elise,
-		synergies: [Eldritch, Shapeshifter],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Jax,
-		synergies: [Chrono, Multistriker],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Jayce,
-		synergies: [Portal, Shapeshifter],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Lillia,
-		synergies: [Faerie, Bastion],
-		cost: 1,
-		range: 4
-	},
-	{
-		name: ChampionName.Nomsy,
-		synergies: [Dragon, Hunter],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Poppy,
-		synergies: [Witchcraft, Bastion],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Seraphine,
-		synergies: [Faerie, Mage],
-		cost: 1,
-		range: 4
-	},
-	{
-		name: ChampionName.Soraka,
-		synergies: [Sugarcraft, Mage],
-		cost: 1,
-		range: 4
-	},
-	{
-		name: ChampionName.Twitch,
-		synergies: [Frost, Hunter],
-		cost: 1,
-		range: 4
-	},
-	{
-		name: ChampionName.Warwick,
-		synergies: [Frost, Vanguard],
-		cost: 1,
-		range: 1
-	},
-	{
-		name: ChampionName.Ahri,
-		synergies: [Arcana, Scholar],
-		cost: 2,
-		range: 4
-	},
-	{
 		name: ChampionName.Akali,
-		synergies: [Pyro, Warrior, Multistriker],
+		synergies: [Rebel, Quickstriker],
 		cost: 2,
-		range: 1
+		range: 1,
 	},
 	{
-		name: ChampionName.Cassiopeia,
-		synergies: [Witchcraft, Incantor],
-		cost: 2,
-		range: 4
-	},
-	{
-		name: ChampionName.Galio,
-		synergies: [Portal, Vanguard, Mage],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.Kassadin,
-		synergies: [Portal, Multistriker],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.KogMaw,
-		synergies: [Honeymancy, Hunter],
-		cost: 2,
-		range: 4
-	},
-	{
-		name: ChampionName.Nilah,
-		synergies: [Eldritch, Warrior],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.Nunu,
-		synergies: [Honeymancy, Bastion],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.Rumble,
-		synergies: [Sugarcraft, Vanguard, Blaster],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.Shyvana,
-		synergies: [Dragon, Shapeshifter],
-		cost: 2,
-		range: 1
-	},
-	{
-		name: ChampionName.Syndra,
-		synergies: [Eldritch, Incantor],
-		cost: 2,
-		range: 4
-	},
-	{
-		name: ChampionName.Tristana,
-		synergies: [Faerie, Blaster],
-		cost: 2,
-		range: 4
-	},
-	{
-		name: ChampionName.Bard,
-		synergies: [Sugarcraft, Preserver, Scholar],
-		cost: 3,
-		range: 4
+		name: ChampionName.Amumu,
+		synergies: [Automata, Watcher],
+		cost: 1,
+		range: 1,
 	},
 	{
 		name: ChampionName.Ezreal,
-		synergies: [Portal, Blaster],
+		synergies: [Academy, Rebel, Artillerist],
 		cost: 3,
-		range: 4
+		range: 4,
 	},
 	{
-		name: ChampionName.Hecarim,
-		synergies: [Arcana, Bastion, Multistriker],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Hwei,
-		synergies: [Frost, Blaster],
-		cost: 3,
-		range: 4
-	},
-	{
-		name: ChampionName.Jinx,
-		synergies: [Sugarcraft, Hunter],
-		cost: 3,
-		range: 4
-	},
-	{
-		name: ChampionName.Mordekaiser,
-		synergies: [Eldritch, Vanguard],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Neeko,
-		synergies: [Witchcraft, Shapeshifter],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Shen,
-		synergies: [Pyro, Bastion],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Swain,
-		synergies: [Frost, Shapeshifter],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Veigar,
-		synergies: [Honeymancy, Mage],
-		cost: 3,
-		range: 4
-	},
-	{
-		name: ChampionName.Vex,
-		synergies: [Chrono, Mage],
-		cost: 3,
-		range: 4
-	},
-	{
-		name: ChampionName.Wukong,
-		synergies: [Druid],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Fiora,
-		synergies: [Witchcraft, Warrior],
+		name: ChampionName.Heimerdinger,
+		synergies: [Academy, Sorcerer],
 		cost: 4,
-		range: 1
+		range: 4,
 	},
 	{
-		name: ChampionName.Katarina,
-		synergies: [Faerie, Warrior],
-		cost: 3,
-		range: 1
-	},
-	{
-		name: ChampionName.Gwen,
-		synergies: [Sugarcraft, Warrior],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Kalista,
-		synergies: [Faerie, Multistriker],
-		cost: 4,
-		range: 4
-	},
-	{
-		name: ChampionName.Karma,
-		synergies: [Chrono, Incantor],
-		cost: 4,
-		range: 4
-	},
-	{
-		name: ChampionName.Nami,
-		synergies: [Eldritch, Mage],
-		cost: 4,
-		range: 4
-	},
-	{
-		name: ChampionName.Nasus,
-		synergies: [Pyro, Shapeshifter],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Olaf,
-		synergies: [Frost, Hunter],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Rakan,
-		synergies: [Faerie, Preserver],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Ryze,
-		synergies: [Portal, Scholar],
-		cost: 4,
-		range: 4
-	},
-	{
-		name: ChampionName.TahmKench,
-		synergies: [Arcana, Vanguard],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Taric,
-		synergies: [Portal, Bastion],
-		cost: 4,
-		range: 1
-	},
-	{
-		name: ChampionName.Briar,
-		synergies: [Ravenous, Eldritch, Shapeshifter],
+		name: ChampionName.Caitlyn,
+		synergies: [Enforcer, Sniper],
 		cost: 5,
-		range: 1
+		range: 4,
 	},
 	{
 		name: ChampionName.Camille,
-		synergies: [Chrono, Multistriker],
-		cost: 5,
-		range: 1
+		synergies: [Enforcer, Ambusher],
+		cost: 2,
+		range: 1,
 	},
 	{
-		name: ChampionName.Diana,
-		synergies: [Frost, Bastion],
-		cost: 5,
-		range: 1
+		name: ChampionName.Illaoi,
+		synergies: [Rebel, Sentinel],
+		cost: 4,
+		range: 1,
 	},
 	{
-		name: ChampionName.Milio,
-		synergies: [Faerie, Scholar],
+		name: ChampionName.Renni,
+		synergies: [ChemBaron, Bruiser],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Scar,
+		synergies: [Firelight, Watcher],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Smeech,
+		synergies: [ChemBaron, Ambusher],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Silco,
+		synergies: [ChemBaron, Dominator],
+		cost: 4,
+		range: 4,
+	},
+	{
+		name: ChampionName.Cassiopeia,
+		synergies: [BlackRose, Dominator],
+		cost: 3,
+		range: 4,
+	},
+	{
+		name: ChampionName.Darius,
+		synergies: [Conqueror, Bruiser],
+		cost: 1,
+		range: 1,
+	},
+	{
+		name: ChampionName.Loris,
+		synergies: [Enforcer, Sentinel],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Nocturne,
+		synergies: [Automata, Quickstriker],
+		cost: 2,
+		range: 1,
+	},
+	{
+		name: ChampionName.Urgot,
+		synergies: [Experiment, PitFighter, Artillerist],
+		cost: 2,
+		range: 2,
+	},
+	{
+		name: ChampionName.Maddie,
+		synergies: [Enforcer, Sniper],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Singed,
+		synergies: [ChemBaron, Sentinel],
+		cost: 1,
+		range: 1,
+	},
+	{
+		name: ChampionName.Steb,
+		synergies: [Enforcer, Bruiser],
+		cost: 1,
+		range: 1,
+	},
+	{
+		name: ChampionName.TwistedFate,
+		synergies: [Enforcer, Quickstriker],
+		cost: 3,
+		range: 4,
+	},
+	{
+		name: ChampionName.Twitch,
+		synergies: [Experiment, Sniper],
+		cost: 4,
+		range: 4,
+	},
+	{
+		name: ChampionName.Draven,
+		synergies: [Conqueror, PitFighter],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Vex,
+		synergies: [Rebel, Visionary],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Elise,
+		synergies: [BlackRose, FormSwapper],
+		cost: 4,
+		range: 1,
+	},
+	{
+		name: ChampionName.Jayce,
+		synergies: [Academy, Quickstriker],
 		cost: 5,
-		range: 4
+		range: 1,
+	},
+	{
+		name: ChampionName.Swain,
+		synergies: [Conqueror, FormSwapper, Sorcerer],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Trundle,
+		synergies: [Scrap, Bruiser],
+		cost: 1,
+		range: 1,
+	},
+	{
+		name: ChampionName.Irelia,
+		synergies: [Rebel, Sentinel],
+		cost: 1,
+		range: 1,
+	},
+	{
+		name: ChampionName.Jinx,
+		synergies: [Rebel, Ambusher],
+		cost: 5,
+		range: 4,
+	},
+	{
+		name: ChampionName.Leona,
+		synergies: [Academy, Bruiser],
+		cost: 2,
+		range: 1,
+	},
+	{
+		name: ChampionName.KogMaw,
+		synergies: [Automata, Sniper],
+		cost: 3,
+		range: 4,
+	},
+	{
+		name: ChampionName.Leblanc,
+		synergies: [BlackRose, Sorcerer],
+		cost: 5,
+		range: 4,
+	},
+	{
+		name: ChampionName.Lux,
+		synergies: [Academy, Sorcerer],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Malzahar,
+		synergies: [Automata, Visionary],
+		cost: 5,
+		range: 4,
+	},
+	{
+		name: ChampionName.Mordekaiser,
+		synergies: [Conqueror, Dominator],
+		cost: 5,
+		range: 1,
+	},
+	{
+		name: ChampionName.Zyra,
+		synergies: [Experiment, Sorcerer],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Nami,
+		synergies: [Emissary, Sorcerer],
+		cost: 3,
+		range: 4,
 	},
 	{
 		name: ChampionName.Morgana,
-		synergies: [Witchcraft, BatQueen, Preserver],
-		cost: 5,
-		range: 4
+		synergies: [BlackRose, Visionary],
+		cost: 1,
+		range: 4,
 	},
 	{
-		name: ChampionName.NorraAndYuumi,
-		synergies: [Portal, BestFriends, Mage],
-		cost: 5,
-		range: 4
-	},
-	{
-		name: ChampionName.Smolder,
-		synergies: [Dragon, Blaster],
-		cost: 5,
-		range: 1
-	},
-	{
-		name: ChampionName.Xerath,
-		synergies: [Arcana, Ascendant],
-		cost: 5,
-		range: 4
-	},
-	{
-		name: ChampionName.Zilean,
-		synergies: [Chrono, Preserver, Frost],
-		cost: 2,
-		range: 4
+		name: ChampionName.Gankplank,
+		synergies: [Scrap, FormSwapper, PitFighter],
+		cost: 3,
+		range: 1,
 	},
 	{
 		name: ChampionName.Zoe,
-		synergies: [Witchcraft, Scholar, Portal],
+		synergies: [Rebel, Sorcerer],
+		cost: 4,
+		range: 4,
+	},
+	{
+		name: ChampionName.Nunu,
+		synergies: [Experiment, Bruiser],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Corki,
+		synergies: [Scrap, Artillerist],
+		cost: 4,
+		range: 4,
+	},
+	{
+		name: ChampionName.DrMundo,
+		synergies: [Experiment, Dominator],
+		cost: 4,
+		range: 1,
+	},
+	{
+		name: ChampionName.Ekko,
+		synergies: [Scrap, Ambusher, Firelight],
+		cost: 4,
+		range: 1,
+	},
+	{
+		name: ChampionName.Garen,
+		synergies: [Emissary, Watcher],
+		cost: 4,
+		range: 1,
+	},
+	{
+		name: ChampionName.Ambessa,
+		synergies: [Emissary, Conqueror, Quickstriker],
+		cost: 4,
+		range: 1,
+	},
+	{
+		name: ChampionName.Rell,
+		synergies: [Conqueror, Sentinel, Visionary],
+		cost: 2,
+		range: 1,
+	},
+	{
+		name: ChampionName.Rumble,
+		synergies: [JunkerKing, Scrap],
+		cost: 5,
+		range: 1,
+	},
+	{
+		name: ChampionName.Sevika,
+		synergies: [HighRoller, ChemBaron, PitFighter],
+		cost: 5,
+		range: 1,
+	},
+	{
+		name: ChampionName.Sett,
+		synergies: [Rebel, Bruiser],
+		cost: 2,
+		range: 1,
+	},
+	{
+		name: ChampionName.Renata,
+		synergies: [ChemBaron, Visionary],
+		cost: 2,
+		range: 4,
+	},
+	{
+		name: ChampionName.Vander,
+		synergies: [Family, Bruiser],
+		cost: 2,
+		range: 1,
+	},
+	{
+		name: ChampionName.Blitzcrank,
+		synergies: [Automata, Dominator],
+		cost: 3,
+		range: 1,
+	},
+	{
+		name: ChampionName.Tristana,
+		synergies: [Emissary, Artillerist],
+		cost: 2,
+		range: 4,
+	},
+	{
+		name: ChampionName.Powder,
+		synergies: [Family, Scrap, Ambusher],
 		cost: 1,
-		range: 4
+		range: 4,
+	},
+	{
+		name: ChampionName.Violet,
+		synergies: [Family, PitFighter],
+		cost: 1,
+		range: 4,
+	},
+	{
+		name: ChampionName.Vladimir,
+		synergies: [BlackRose, Sorcerer, Watcher],
+		cost: 2,
+		range: 2,
+	},
+	{
+		name: ChampionName.Vi,
+		synergies: [Enforcer, PitFighter],
+		cost: 4,
+		range: 1,
 	},
 	{
 		name: ChampionName.Ziggs,
-		synergies: [Honeymancy, Incantor],
-		cost: 1,
-		range: 4
+		synergies: [Scrap, Dominator],
+		cost: 2,
+		range: 4,
 	},
 	{
-		name: ChampionName.Varus,
-		synergies: [Pyro, Blaster],
-		cost: 4,
-		range: 4
-	}
+		name: ChampionName.Zeri,
+		synergies: [Firelight, Sniper],
+		cost: 2,
+		range: 4,
+	},
 ];

@@ -1,252 +1,260 @@
-import { SynergyLevel } from "./synergy-level";
 import type { Synergy } from "../types/synergy";
+import { SynergyLevel } from "./synergy-level";
 import { SynergyName } from "./synergy-name";
 
 const {
-	Arcana,
-	Chrono,
-	Dragon,
-	Druid,
-	Eldritch,
-	Faerie,
-	Frost,
-	Honeymancy,
-	Portal,
-	Pyro,
-	Ravenous,
-	Sugarcraft,
-	Witchcraft,
-	Ascendant,
-	Bastion,
-	BatQueen,
-	BestFriends,
-	Blaster,
-	Hunter,
-	Incantor,
-	Mage,
-	Multistriker,
-	Preserver,
-	Scholar,
-	Shapeshifter,
-	Vanguard,
-	Warrior
+	Academy,
+	Automata,
+	BlackRose,
+	ChemBaron,
+	Conqueror,
+	Emissary,
+	Enforcer,
+	Experiment,
+	Family,
+	Firelight,
+	HighRoller,
+	JunkerKing,
+	Rebel,
+	Scrap,
+	Ambusher,
+	Artillerist,
+	Bruiser,
+	Dominator,
+	FormSwapper,
+	PitFighter,
+	Quickstriker,
+	Sentinel,
+	Sniper,
+	Sorcerer,
+	Visionary,
+	Watcher,
 } = SynergyName;
 
 export const synergies: Synergy[] = [
 	{
-		name: Arcana,
+		name: Conqueror,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
 			6: SynergyLevel.Gold,
-			8: SynergyLevel.Diamond
-		}
+			9: SynergyLevel.Diamond,
+		},
 	},
 	{
-		name: Chrono,
+		name: Emissary,
+		levels: {
+			1: SynergyLevel.Bronze,
+			4: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Rebel,
+		levels: {
+			3: SynergyLevel.Bronze,
+			5: SynergyLevel.Silver,
+			7: SynergyLevel.Gold,
+			10: SynergyLevel.Diamond,
+		},
+	},
+
+	{
+		name: Sorcerer,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
+			6: SynergyLevel.Gold,
+			8: SynergyLevel.Gold,
+		},
 	},
 	{
-		name: Dragon,
+		name: Academy,
+		levels: {
+			3: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			5: SynergyLevel.Gold,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Automata,
 		levels: {
 			2: SynergyLevel.Bronze,
-			3: SynergyLevel.Silver
-		}
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
 	},
 	{
-		name: Druid,
-		levels: {
-			1: SynergyLevel.Bronze
-		}
-	},
-	{
-		name: Eldritch,
+		name: BlackRose,
 		levels: {
 			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
+			4: SynergyLevel.Silver,
+			5: SynergyLevel.Gold,
 			7: SynergyLevel.Gold,
-			10: SynergyLevel.Diamond
-		}
+		},
 	},
 	{
-		name: Faerie,
+		name: ChemBaron,
 		levels: {
 			3: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
 			5: SynergyLevel.Silver,
+			6: SynergyLevel.Silver,
 			7: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond
-		}
+		},
 	},
 	{
-		name: Frost,
+		name: Enforcer,
 		levels: {
-			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond
-		}
-	},
-	{
-		name: Honeymancy,
-		levels: {
-			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold
-		}
-	},
-	{
-		name: Portal,
-		levels: {
-			3: SynergyLevel.Bronze,
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
 			6: SynergyLevel.Silver,
 			8: SynergyLevel.Gold,
-			10: SynergyLevel.Diamond
-		}
+			10: SynergyLevel.Diamond,
+		},
 	},
 	{
-		name: Pyro,
-		levels: {
-			2: SynergyLevel.Bronze,
-			3: SynergyLevel.Silver,
-			4: SynergyLevel.Gold,
-			5: SynergyLevel.Diamond
-		}
-	},
-	{
-		name: Ravenous,
-		levels: {
-			1: SynergyLevel.Bronze
-		}
-	},
-	{
-		name: Sugarcraft,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
-	},
-	{
-		name: Witchcraft,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			8: SynergyLevel.Diamond
-		}
-	},
-	{
-		name: Ascendant,
-		levels: {
-			1: SynergyLevel.Bronze
-		}
-	},
-	{
-		name: Bastion,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			8: SynergyLevel.Diamond
-		}
-	},
-	{
-		name: BatQueen,
-		levels: {
-			1: SynergyLevel.Bronze
-		}
-	},
-	{
-		name: BestFriends,
-		levels: {
-			1: SynergyLevel.Bronze
-		}
-	},
-	{
-		name: Blaster,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
-	},
-	{
-		name: Hunter,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
-	},
-	{
-		name: Incantor,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver
-		}
-	},
-	{
-		name: Mage,
+		name: Experiment,
 		levels: {
 			3: SynergyLevel.Bronze,
 			5: SynergyLevel.Silver,
 			7: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond
-		}
+		},
 	},
 	{
-		name: Multistriker,
+		name: Family,
 		levels: {
 			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond
-		}
+			4: SynergyLevel.Silver,
+			5: SynergyLevel.Gold,
+		},
 	},
 	{
-		name: Preserver,
+		name: Firelight,
 		levels: {
 			2: SynergyLevel.Bronze,
 			3: SynergyLevel.Silver,
 			4: SynergyLevel.Gold,
-			5: SynergyLevel.Diamond
-		}
+		},
 	},
 	{
-		name: Scholar,
+		name: HighRoller,
 		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
+			1: SynergyLevel.Bronze,
+		},
 	},
 	{
-		name: Shapeshifter,
+		name: JunkerKing,
+		levels: {
+			1: SynergyLevel.Bronze,
+		},
+	},
+	{
+		name: Scrap,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
 			6: SynergyLevel.Gold,
-			8: SynergyLevel.Diamond
-		}
+			9: SynergyLevel.Diamond,
+		},
 	},
 	{
-		name: Vanguard,
+		name: Ambusher,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Silver,
+			5: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Artillerist,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
+			6: SynergyLevel.Gold,
+		},
 	},
 	{
-		name: Warrior,
+		name: Bruiser,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold
-		}
-	}
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Dominator,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: FormSwapper,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+		},
+	},
+	{
+		name: PitFighter,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Silver,
+			8: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Quickstriker,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Sentinel,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Sniper,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Sorcerer,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Silver,
+			8: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Visionary,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Silver,
+			8: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Watcher,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
 ];

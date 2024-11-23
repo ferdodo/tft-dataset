@@ -1,5 +1,5 @@
-import { SynergyName } from "../constants/synergy-name";
-import { SynergyLevel } from "../constants/synergy-level";
+import type { SynergyName } from "../constants/synergy-name";
+import type { SynergyLevel } from "../constants/synergy-level";
 
 export interface Synergy {
 	name: SynergyName;
