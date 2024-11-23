@@ -178,7 +178,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Jayce,
-		synergies: [Academy, Quickstriker],
+		synergies: [Academy, FormSwapper],
 		cost: 5,
 		range: 1,
 	},
