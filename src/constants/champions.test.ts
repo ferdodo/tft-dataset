@@ -317,3 +317,23 @@ test("Scrap", () => {
 
 	expect(rangeSum).toEqual(4 + 1 + 1 + 4 + 1 + 1 + 4);
 });
+
+test("Bruiser", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.Bruiser);
+
+	expect(synergies.length).toEqual(6);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Bruiser))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(4 + 3 + 3 + 2 + 1 + 1);
+
+	const rangeSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Bruiser))
+		.reduce((sum, c) => sum + c.range, 0);
+
+	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 1);
+});

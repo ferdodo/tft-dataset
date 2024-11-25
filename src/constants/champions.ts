@@ -106,7 +106,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Darius,
-		synergies: [Conqueror, Bruiser],
+		synergies: [Conqueror, Watcher],
 		cost: 1,
 		range: 1,
 	},
@@ -172,7 +172,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Elise,
-		synergies: [BlackRose, FormSwapper],
+		synergies: [BlackRose, FormSwapper, Bruiser],
 		cost: 4,
 		range: 1,
 	},
@@ -208,7 +208,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Leona,
-		synergies: [Academy, Bruiser],
+		synergies: [Academy, Sentinel],
 		cost: 2,
 		range: 1,
 	},
@@ -340,7 +340,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Vander,
-		synergies: [Family, Bruiser],
+		synergies: [Family, Watcher],
 		cost: 2,
 		range: 1,
 	},

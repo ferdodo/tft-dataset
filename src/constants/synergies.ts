@@ -124,9 +124,9 @@ export const synergies: Synergy[] = [
 	{
 		name: Family,
 		levels: {
-			3: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			5: SynergyLevel.Gold,
+			3: SynergyLevel.Gold,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Diamond,
 		},
 	},
 	{
@@ -211,7 +211,7 @@ export const synergies: Synergy[] = [
 		name: Quickstriker,
 		levels: {
 			2: SynergyLevel.Bronze,
-			3: SynergyLevel.Silver,
+			3: SynergyLevel.Bronze,
 			4: SynergyLevel.Gold,
 		},
 	},
