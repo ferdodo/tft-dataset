@@ -337,3 +337,23 @@ test("Bruiser", () => {
 
 	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 1);
 });
+
+test("Visionary", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.Visionary);
+
+	expect(synergies.length).toEqual(7);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Visionary))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(4 + 5 + 1 + 3 + 2 + 2 + 1);
+
+	const rangeSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Visionary))
+		.reduce((sum, c) => sum + c.range, 0);
+
+	expect(rangeSum).toEqual(4 + 4 + 4 + 1 + 1 + 4 + 4);
+});

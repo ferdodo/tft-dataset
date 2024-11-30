@@ -52,7 +52,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Heimerdinger,
-		synergies: [Academy, Sorcerer],
+		synergies: [Academy, Sorcerer, Visionary],
 		cost: 4,
 		range: 4,
 	},
@@ -274,7 +274,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Nunu,
-		synergies: [Experiment, Bruiser],
+		synergies: [Experiment, Bruiser, Visionary],
 		cost: 3,
 		range: 1,
 	},
