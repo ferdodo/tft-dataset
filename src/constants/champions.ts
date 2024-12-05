@@ -52,7 +52,7 @@ export const champions: Champion[] = [
 	},
 	{
 		name: ChampionName.Heimerdinger,
-		synergies: [Academy, Sorcerer, Visionary],
+		synergies: [Academy, Visionary],
 		cost: 4,
 		range: 4,
 	},
@@ -372,7 +372,7 @@ export const champions: Champion[] = [
 		name: ChampionName.Vladimir,
 		synergies: [BlackRose, Sorcerer, Watcher],
 		cost: 2,
-		range: 2,
+		range: 1,
 	},
 	{
 		name: ChampionName.Vi,

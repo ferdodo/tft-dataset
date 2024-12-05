@@ -34,7 +34,7 @@ test("Two costs", () => {
 		.filter((c) => c.cost === 2)
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 4 + 1 + 4 + 2 + 1 + 2 + 4 + 4);
+	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 4 + 1 + 4 + 2 + 1 + 1 + 4 + 4);
 });
 
 test("Three costs", () => {
@@ -101,7 +101,7 @@ test("BlackRose", () => {
 		.filter((c) => c.synergies.includes(SynergyName.BlackRose))
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(4 + 1 + 4 + 4 + 2);
+	expect(rangeSum).toEqual(4 + 1 + 4 + 4 + 1);
 });
 
 test("Rebel", () => {
@@ -353,6 +353,26 @@ test("Visionary", () => {
 
 	const rangeSum = champions
 		.filter((c) => c.synergies.includes(SynergyName.Visionary))
+		.reduce((sum, c) => sum + c.range, 0);
+
+	expect(rangeSum).toEqual(4 + 4 + 4 + 1 + 1 + 4 + 4);
+});
+
+test("Sorcerers", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.Sorcerer);
+
+	expect(synergies.length).toEqual(7);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Sorcerer))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(5 + 1 + 3 + 3 + 2 + 4 + 1);
+
+	const rangeSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Sorcerer))
 		.reduce((sum, c) => sum + c.range, 0);
 
 	expect(rangeSum).toEqual(4 + 4 + 4 + 1 + 1 + 4 + 4);
