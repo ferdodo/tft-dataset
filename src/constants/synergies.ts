@@ -3,53 +3,36 @@ import { SynergyLevel } from "./synergy-level";
 import { SynergyName } from "./synergy-name";
 
 const {
-	Academy,
-	Automata,
-	BlackRose,
-	ChemBaron,
-	Conqueror,
-	Emissary,
-	Enforcer,
-	Experiment,
-	Family,
-	Firelight,
-	HighRoller,
-	JunkerKing,
-	Rebel,
-	Scrap,
-	Ambusher,
-	Artillerist,
+	AnimaSquad,
+	BoomBots,
+	Cyberboss,
+	Cypher,
+	Divinicorp,
+	Exotech,
+	GodOfTheNet,
+	GoldenOx,
+	Nitro,
+	Overlord,
+	SoulKiller,
+	StreetDemon,
+	Syndicate,
+	Virus,
+	AMP,
+	Bastion,
 	Bruiser,
-	Dominator,
-	FormSwapper,
-	PitFighter,
-	Quickstriker,
-	Sentinel,
-	Sniper,
-	Sorcerer,
-	Visionary,
-	Watcher,
+	Dynamo,
+	Executioner,
+	Marksman,
+	Rapidfire,
+	Slayer,
+	Strategist,
+	Techie,
+	Vanguard,
 } = SynergyName;
 
 export const synergies: Synergy[] = [
 	{
-		name: Conqueror,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond,
-		},
-	},
-	{
-		name: Emissary,
-		levels: {
-			1: SynergyLevel.Bronze,
-			4: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: Rebel,
+		name: AnimaSquad,
 		levels: {
 			3: SynergyLevel.Bronze,
 			5: SynergyLevel.Silver,
@@ -57,27 +40,8 @@ export const synergies: Synergy[] = [
 			10: SynergyLevel.Diamond,
 		},
 	},
-
 	{
-		name: Sorcerer,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			8: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: Academy,
-		levels: {
-			3: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			5: SynergyLevel.Gold,
-			6: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: Automata,
+		name: BoomBots,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
@@ -85,36 +49,86 @@ export const synergies: Synergy[] = [
 		},
 	},
 	{
-		name: BlackRose,
+		name: Cyberboss,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Cypher,
 		levels: {
 			3: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
 			5: SynergyLevel.Gold,
-			7: SynergyLevel.Gold,
 		},
 	},
 	{
-		name: ChemBaron,
+		name: Divinicorp,
+		levels: {
+			1: SynergyLevel.Bronze,
+			2: SynergyLevel.Silver,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
+			6: SynergyLevel.Gold,
+			7: SynergyLevel.Diamond,
+		},
+	},
+	{
+		name: Exotech,
 		levels: {
 			3: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
 			5: SynergyLevel.Silver,
-			6: SynergyLevel.Silver,
 			7: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: Enforcer,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Silver,
-			8: SynergyLevel.Gold,
 			10: SynergyLevel.Diamond,
 		},
 	},
 	{
-		name: Experiment,
+		name: GodOfTheNet,
+		levels: {
+			1: SynergyLevel.Bronze,
+		},
+	},
+	{
+		name: GoldenOx,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Nitro,
+		levels: {
+			3: SynergyLevel.Bronze,
+			4: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Overlord,
+		levels: {
+			1: SynergyLevel.Bronze,
+		},
+	},
+	{
+		name: SoulKiller,
+		levels: {
+			1: SynergyLevel.Bronze,
+		},
+	},
+	{
+		name: StreetDemon,
+		levels: {
+			3: SynergyLevel.Bronze,
+			5: SynergyLevel.Silver,
+			7: SynergyLevel.Gold,
+			10: SynergyLevel.Diamond,
+		},
+	},
+	{
+		name: Syndicate,
 		levels: {
 			3: SynergyLevel.Bronze,
 			5: SynergyLevel.Silver,
@@ -122,53 +136,22 @@ export const synergies: Synergy[] = [
 		},
 	},
 	{
-		name: Family,
-		levels: {
-			3: SynergyLevel.Gold,
-			4: SynergyLevel.Gold,
-			5: SynergyLevel.Diamond,
-		},
-	},
-	{
-		name: Firelight,
-		levels: {
-			2: SynergyLevel.Bronze,
-			3: SynergyLevel.Silver,
-			4: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: HighRoller,
+		name: Virus,
 		levels: {
 			1: SynergyLevel.Bronze,
 		},
 	},
 	{
-		name: JunkerKing,
-		levels: {
-			1: SynergyLevel.Bronze,
-		},
-	},
-	{
-		name: Scrap,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-			9: SynergyLevel.Diamond,
-		},
-	},
-	{
-		name: Ambusher,
+		name: AMP,
 		levels: {
 			2: SynergyLevel.Bronze,
 			3: SynergyLevel.Silver,
-			4: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
 			5: SynergyLevel.Gold,
 		},
 	},
 	{
-		name: Artillerist,
+		name: Bastion,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
@@ -184,39 +167,31 @@ export const synergies: Synergy[] = [
 		},
 	},
 	{
-		name: Dominator,
+		name: Dynamo,
 		levels: {
 			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: FormSwapper,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-		},
-	},
-	{
-		name: PitFighter,
-		levels: {
-			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Silver,
-			8: SynergyLevel.Gold,
-		},
-	},
-	{
-		name: Quickstriker,
-		levels: {
-			2: SynergyLevel.Bronze,
-			3: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
 			4: SynergyLevel.Gold,
 		},
 	},
 	{
-		name: Sentinel,
+		name: Executioner,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Marksman,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Rapidfire,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
@@ -224,7 +199,7 @@ export const synergies: Synergy[] = [
 		},
 	},
 	{
-		name: Sniper,
+		name: Slayer,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
@@ -232,25 +207,25 @@ export const synergies: Synergy[] = [
 		},
 	},
 	{
-		name: Sorcerer,
+		name: Strategist,
 		levels: {
 			2: SynergyLevel.Bronze,
-			4: SynergyLevel.Silver,
-			6: SynergyLevel.Silver,
-			8: SynergyLevel.Gold,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
 		},
 	},
 	{
-		name: Visionary,
+		name: Techie,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
-			6: SynergyLevel.Silver,
-			8: SynergyLevel.Gold,
+			6: SynergyLevel.Gold,
+			8: SynergyLevel.Diamond,
 		},
 	},
 	{
-		name: Watcher,
+		name: Vanguard,
 		levels: {
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,

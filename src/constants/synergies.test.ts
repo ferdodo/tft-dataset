@@ -2,7 +2,7 @@ import { test, expect } from "vitest";
 import { synergies } from "./synergies";
 
 test("Should contain all synergies", () => {
-	expect(synergies.length).toEqual(27);
+	expect(synergies.length).toEqual(25);
 });
 
 test("All synergies should contain levels", () => {
