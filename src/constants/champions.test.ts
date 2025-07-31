@@ -15,15 +15,29 @@ test("Five costs", () => {
 		.filter((c) => c.cost === 5)
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(4 + 1 + 1 + 1 + 4 + 4 + 1 + 1);
+	expect(rangeSum).toEqual(20);
 });
 
 test("Four costs", () => {
+	const fourCosts = champions.filter((c) => c.cost === 4);
+	expect(fourCosts.length).toEqual(13);
+
 	const rangeSum = champions
 		.filter((c) => c.cost === 4)
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(4 + 4 + 4 + 1 + 1 + 4 + 1 + 1 + 4 + 4 + 1 + 5 + 4);
+	expect(rangeSum).toEqual(28);
+});
+
+test("Three costs", () => {
+	const threeCosts = champions.filter((c) => c.cost === 3);
+	expect(threeCosts.length).toEqual(16);
+
+	const rangeSum = champions
+		.filter((c) => c.cost === 3)
+		.reduce((sum, c) => sum + c.range, 0);
+
+	expect(rangeSum).toEqual(41);
 });
 
 test("Two costs", () => {
@@ -34,452 +48,220 @@ test("Two costs", () => {
 		.filter((c) => c.cost === 2)
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(1 + 1 + 2 + 1 + 4 + 4 + 1 + 1 + 1 + 1 + 4 + 4 + 4);
-});
-
-test("Three costs", () => {
-	const rangeSum = champions
-		.filter((c) => c.cost === 3)
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 4 + 4 + 2 + 1 + 1 + 1 + 4 + 1 + 1 + 4 + 4 + 4);
+	expect(rangeSum).toEqual(28);
 });
 
 test("One costs", () => {
 	const oneCosts = champions.filter((c) => c.cost === 1);
-	expect(oneCosts.length).toEqual(13);
+	expect(oneCosts.length).toEqual(14);
 });
 
-test("AnimaSquad", () => {
+test("Battle Academia", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.AnimaSquad);
+		.filter((synergyName) => synergyName === SynergyName.BattleAcademia);
 
 	expect(synergies.length).toEqual(8);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.AnimaSquad))
+		.filter((c) => c.synergies.includes(SynergyName.BattleAcademia))
 		.reduce((sum, c) => sum + c.cost, 0);
 
-	expect(costSum).toEqual(3 + 4 + 2 + 1 + 1 + 4 + 2 + 5);
+	expect(costSum).toEqual(3 + 1 + 1 + 3 + 2 + 4 + 2 + 4);
 });
 
-test("BoomBots", () => {
+test("Crystal Gambit", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.BoomBots);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.BoomBots))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(4 + 3 + 1 + 2 + 5);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.BoomBots))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 2 + 4 + 1 + 4);
-});
-
-test("Cypher", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Cypher);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Cypher))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(3 + 3 + 2 + 1 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Cypher))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 1 + 4 + 1 + 1);
-});
-
-test("Divinicorp", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Divinicorp);
+		.filter((synergyName) => synergyName === SynergyName.CrystalGambit);
 
 	expect(synergies.length).toEqual(6);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Divinicorp))
+		.filter((c) => c.synergies.includes(SynergyName.CrystalGambit))
 		.reduce((sum, c) => sum + c.cost, 0);
 
-	expect(costSum).toEqual(3 + 1 + 5 + 2 + 3 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Divinicorp))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 4 + 1 + 1 + 4 + 4);
+	expect(costSum).toEqual(4 + 2 + 3 + 1 + 2 + 5);
 });
 
-test("Exotech", () => {
+test("Luchador", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Exotech);
-
-	expect(synergies.length).toEqual(7);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Exotech))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(1 + 2 + 3 + 2 + 4 + 3 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Exotech))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 4 + 1 + 1 + 1 + 4 + 5);
-});
-
-test("Bastion", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Bastion);
-
-	expect(synergies.length).toEqual(7);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Bastion))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(3 + 2 + 1 + 1 + 5 + 4 + 2);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Bastion))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 1 + 1);
-});
-
-test("Bruiser", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Bruiser);
-
-	expect(synergies.length).toEqual(7);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Bruiser))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(1 + 4 + 2 + 1 + 3 + 5 + 3);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Bruiser))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 1 + 1);
-});
-
-test("Dynamo", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Dynamo);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Dynamo))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(5 + 3 + 2 + 4 + 1);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Dynamo))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 4 + 4 + 4 + 4);
-});
-
-test("Executioner", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Executioner);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Executioner))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(2 + 3 + 5 + 3 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Executioner))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(2 + 1 + 4 + 4 + 4);
-});
-
-test("Marksman", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Marksman);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Marksman))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(4 + 2 + 3 + 1 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Marksman))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 4 + 4 + 4 + 4);
-});
-
-test("Slayer", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Slayer);
-
-	expect(synergies.length).toEqual(6);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Slayer))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(1 + 3 + 3 + 1 + 2 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Slayer))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 1 + 4 + 1 + 4 + 1);
-});
-
-test("Strategist", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Strategist);
-
-	expect(synergies.length).toEqual(5);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Strategist))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(4 + 2 + 2 + 4 + 3);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Strategist))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 4 + 1 + 4 + 4);
-});
-
-test("Techie", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Techie);
-
-	expect(synergies.length).toEqual(8);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Techie))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(4 + 3 + 3 + 1 + 2 + 2 + 5 + 1);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Techie))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 2 + 1 + 4 + 1 + 4 + 1 + 4);
-});
-
-test("Vanguard", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Vanguard);
-
-	expect(synergies.length).toEqual(7);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Vanguard))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(3 + 3 + 4 + 2 + 2 + 1 + 1);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Vanguard))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 1 + 1 + 1 + 1 + 1 + 1);
-});
-
-test("GoldenOx", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.GoldenOx);
-
-	expect(synergies.length).toEqual(6);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.GoldenOx))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(1 + 4 + 4 + 2 + 3 + 5);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.GoldenOx))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1 + 4 + 4 + 2 + 1 + 1);
-});
-
-test("GodOfTheNet", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.GodOfTheNet);
-
-	expect(synergies.length).toEqual(1);
-
-	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.GodOfTheNet))
-		.reduce((sum, c) => sum + c.cost, 0);
-
-	expect(costSum).toEqual(5);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.GodOfTheNet))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1);
-});
-
-test("Nitro", () => {
-	const synergies = champions
-		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Nitro);
+		.filter((synergyName) => synergyName === SynergyName.Luchador);
 
 	expect(synergies.length).toEqual(4);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Nitro))
+		.filter((c) => c.synergies.includes(SynergyName.Luchador))
 		.reduce((sum, c) => sum + c.cost, 0);
 
-	expect(costSum).toEqual(3 + 1 + 1 + 2);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Nitro))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 4 + 3 + 1);
+	expect(costSum).toEqual(5 + 2 + 1 + 4);
 });
 
-test("AMP", () => {
+test("Mentor", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.AMP);
+		.filter((synergyName) => synergyName === SynergyName.Mentor);
 
-	expect(synergies.length).toEqual(5);
+	expect(synergies.length).toEqual(4);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.AMP))
+		.filter((c) => c.synergies.includes(SynergyName.Mentor))
 		.reduce((sum, c) => sum + c.cost, 0);
 
-	expect(costSum).toEqual(4 + 2 + 1 + 5 + 3);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.AMP))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 1 + 3 + 4 + 4);
+	expect(costSum).toEqual(2 + 4 + 3 + 3);
 });
 
-test("Rapidfire", () => {
+test("Mighty Mech", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Rapidfire);
+		.filter((synergyName) => synergyName === SynergyName.MightyMech);
 
-	expect(synergies.length).toEqual(5);
+	expect(synergies.length).toEqual(7);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Rapidfire))
+		.filter((c) => c.synergies.includes(SynergyName.MightyMech))
 		.reduce((sum, c) => sum + c.cost, 0);
 
-	expect(costSum).toEqual(3 + 1 + 1 + 2 + 4);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Rapidfire))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(4 + 4 + 4 + 4 + 5);
+	expect(costSum).toEqual(1 + 2 + 4 + 4 + 1 + 3 + 5);
 });
 
-test("Virus", () => {
+test("Monster Trainer", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Virus);
+		.filter((synergyName) => synergyName === SynergyName.MonsterTrainer);
+
+	expect(synergies.length).toEqual(4);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.MonsterTrainer))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(3 + 3 + 3 + 3);
+});
+
+test("Rogue Captain", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.RogueCaptain);
 
 	expect(synergies.length).toEqual(1);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Virus))
+		.filter((c) => c.synergies.includes(SynergyName.RogueCaptain))
 		.reduce((sum, c) => sum + c.cost, 0);
 
 	expect(costSum).toEqual(5);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Virus))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1);
 });
 
-test("SoulKiller", () => {
+test("Soul Fighter", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.SoulKiller);
+		.filter((synergyName) => synergyName === SynergyName.SoulFighter);
+
+	expect(synergies.length).toEqual(8);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.SoulFighter))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(5 + 1 + 2 + 1 + 4 + 4 + 3 + 2);
+});
+
+test("Stance Master", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.StanceMaster);
 
 	expect(synergies.length).toEqual(1);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.SoulKiller))
+		.filter((c) => c.synergies.includes(SynergyName.StanceMaster))
 		.reduce((sum, c) => sum + c.cost, 0);
 
 	expect(costSum).toEqual(5);
-
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.SoulKiller))
-		.reduce((sum, c) => sum + c.range, 0);
-
-	expect(rangeSum).toEqual(1);
 });
 
-test("Overlord", () => {
+test("Star Guardian", () => {
 	const synergies = champions
 		.flatMap((c) => c.synergies)
-		.filter((synergyName) => synergyName === SynergyName.Overlord);
+		.filter((synergyName) => synergyName === SynergyName.StarGuardian);
+
+	expect(synergies.length).toEqual(7);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.StarGuardian))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(3 + 4 + 3 + 4 + 1 + 5 + 2);
+});
+
+test("Supreme Cells", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.SupremeCells);
+
+	expect(synergies.length).toEqual(4);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.SupremeCells))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(4 + 3 + 2 + 1);
+});
+
+test("The Champ", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.TheChamp);
 
 	expect(synergies.length).toEqual(1);
 
 	const costSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Overlord))
+		.filter((c) => c.synergies.includes(SynergyName.TheChamp))
 		.reduce((sum, c) => sum + c.cost, 0);
 
 	expect(costSum).toEqual(5);
+});
 
-	const rangeSum = champions
-		.filter((c) => c.synergies.includes(SynergyName.Overlord))
-		.reduce((sum, c) => sum + c.range, 0);
+test("The Crew", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.TheCrew);
 
-	expect(rangeSum).toEqual(1);
+	expect(synergies.length).toEqual(4);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.TheCrew))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(1 + 2 + 1 + 3);
+});
+
+test("Wraith", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.Wraith);
+
+	expect(synergies.length).toEqual(6);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Wraith))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(2 + 4 + 1 + 3 + 5 + 1);
+});
+
+test("Rosemother", () => {
+	const synergies = champions
+		.flatMap((c) => c.synergies)
+		.filter((synergyName) => synergyName === SynergyName.Rosemother);
+
+	expect(synergies.length).toEqual(1);
+
+	const costSum = champions
+		.filter((c) => c.synergies.includes(SynergyName.Rosemother))
+		.reduce((sum, c) => sum + c.cost, 0);
+
+	expect(costSum).toEqual(5);
 });
