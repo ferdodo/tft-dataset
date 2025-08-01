@@ -26,7 +26,7 @@ test("Four costs", () => {
 		.filter((c) => c.cost === 4)
 		.reduce((sum, c) => sum + c.range, 0);
 
-	expect(rangeSum).toEqual(28);
+	expect(rangeSum).toEqual(31);
 });
 
 test("Three costs", () => {

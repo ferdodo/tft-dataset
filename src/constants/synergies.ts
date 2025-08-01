@@ -18,6 +18,18 @@ const {
 	TheChamp,
 	TheCrew,
 	Wraith,
+	// TFT Classes
+	Bastion,
+	Duelist,
+	Edgelord,
+	Executioner,
+	Heavyweight,
+	Juggernaut,
+	Prodigy,
+	Protector,
+	Sniper,
+	Sorcerer,
+	Strategist,
 } = SynergyName;
 
 export const synergies: Synergy[] = [
@@ -35,7 +47,6 @@ export const synergies: Synergy[] = [
 			3: SynergyLevel.Bronze,
 			5: SynergyLevel.Silver,
 			7: SynergyLevel.Gold,
-			10: SynergyLevel.Diamond,
 		},
 	},
 	{
@@ -56,24 +67,20 @@ export const synergies: Synergy[] = [
 		name: MightyMech,
 		levels: {
 			3: SynergyLevel.Bronze,
-			4: SynergyLevel.Gold,
+			5: SynergyLevel.Silver,
+			7: SynergyLevel.Gold,
 		},
 	},
 	{
 		name: MonsterTrainer,
 		levels: {
-			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold,
-			10: SynergyLevel.Diamond,
+			1: SynergyLevel.Bronze,
 		},
 	},
 	{
 		name: RogueCaptain,
 		levels: {
-			3: SynergyLevel.Bronze,
-			5: SynergyLevel.Silver,
-			7: SynergyLevel.Gold,
+			1: SynergyLevel.Bronze,
 		},
 	},
 	{
@@ -135,6 +142,99 @@ export const synergies: Synergy[] = [
 			2: SynergyLevel.Bronze,
 			4: SynergyLevel.Silver,
 			6: SynergyLevel.Gold,
+		},
+	},
+	// TFT Classes
+	{
+		name: Bastion,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Duelist,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Edgelord,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Executioner,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Heavyweight,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Juggernaut,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Prodigy,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Protector,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Sniper,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Sorcerer,
+		levels: {
+			2: SynergyLevel.Bronze,
+			4: SynergyLevel.Silver,
+			6: SynergyLevel.Gold,
+		},
+	},
+	{
+		name: Strategist,
+		levels: {
+			2: SynergyLevel.Bronze,
+			3: SynergyLevel.Silver,
+			4: SynergyLevel.Gold,
+			5: SynergyLevel.Gold,
 		},
 	},
 ];

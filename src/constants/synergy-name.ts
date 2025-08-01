@@ -15,4 +15,17 @@ export enum SynergyName {
 	TheChamp = "TheChamp",
 	TheCrew = "TheCrew",
 	Wraith = "Wraith",
+
+	// TFT Classes
+	Bastion = "Bastion",
+	Duelist = "Duelist",
+	Edgelord = "Edgelord",
+	Executioner = "Executioner",
+	Heavyweight = "Heavyweight",
+	Juggernaut = "Juggernaut",
+	Prodigy = "Prodigy",
+	Protector = "Protector",
+	Sniper = "Sniper",
+	Sorcerer = "Sorcerer",
+	Strategist = "Strategist",
 }

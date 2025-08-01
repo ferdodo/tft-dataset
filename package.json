@@ -1,6 +1,6 @@
 {
 	"name": "tft-dataset",
-	"version": "4.0.0",
+	"version": "4.1.0",
 	"description": "Basic informations on current tft set.",
 	"main": "dist/index.js",
 	"repository": {
